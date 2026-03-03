@@ -19,7 +19,9 @@ def clean_data(text: str) -> str:
   return text
 
 def main():
-  dataset = "dontpatronizeme_pcl.tsv"
+  # dataset = "dontpatronizeme_pcl.tsv"
+  # dataset = "synthetic_pcl_data.tsv"
+  dataset = "synthetic_pcl_data2.tsv"
 
   keep_punctuation = False
 
@@ -100,9 +102,9 @@ def main():
   print("-------------------------------")
 
   print(f"stop words: {stop_word_count} / {int(avg_len*count)} = {stop_word_count*100/(avg_len*count):.2f}%")
-  print("Top 10 Most Common Bigrams:")
-  for (w1, w2, w3), count in bigrams.most_common(20):
-      print(f"{w1} {w2} {w3}: {count}")
+  # print("Top 10 Most Common Bigrams:")
+  # for (w1, w2, w3), count in bigrams.most_common(20):
+  #     print(f"{w1} {w2} {w3}: {count}")
 
 
 if __name__ == "__main__":
