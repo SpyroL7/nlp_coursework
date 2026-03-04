@@ -19,9 +19,9 @@ def clean_data(text: str) -> str:
   return text
 
 def main():
-  # dataset = "dontpatronizeme_pcl.tsv"
+  dataset = "dontpatronizeme_pcl.tsv"
   # dataset = "synthetic_pcl_data.tsv"
-  dataset = "synthetic_pcl_data2.tsv"
+  # dataset = "synthetic_pcl_data2.tsv"
 
   keep_punctuation = False
 
